@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/socket.io/socket.io.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <%= user%>
+    <div id="chat-box">
+        <div id="msg-box"></div>
+        <form id="chat-input">
+            <input autocomplete="off" type="text" id="chat-message" placeholder="Type a message...">
+            <button id="chat-send">Send</button>
+        </form>
+    </div>
+    <script>
+        var user = '<%= user%>';
+    </script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
